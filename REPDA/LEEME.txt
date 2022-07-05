@@ -1,0 +1,62 @@
+# Información General:
+	* La página inicial del sitio es http://localhost/BDA2022/REPDA/index.php/Home/index
+		+ El sitio está hecho usando MVC, por lo que de cambiar la ubicación del documento, será necesario hacer este cambio en todas las vistas que se encuentran en la carpeta View
+		+ Al ser un proyecto sobre transparencia se decidió colocar toda la documentación dentro de la página inicial
+	
+	* El archivo DER_DBA_Conagua_2.pdf contiene el Diagrama Entidad Relación. Se necesita para la página principal.
+	
+	* El archivo baseREPDA.sql contiene la creación de la base de datos, así como la creación del usuario que permite hacer funcionar este proyecto.
+
+	* Para mostrar correctamente el ícono de la página en pestaña, se debe mover el archivo drop.ico a la carpeta de htdocs.
+
+	* Salvo los registros donde la autoridad está a nombre de Jazmín López Chacón, todos los datos son reales.
+
+# Uso
+	* Página inicial: En esta página, solamente es posible leer la documentación y todo lo que está detrás del proyecto.
+
+	* Página de consultas.
+		+ Consulta: En este apartado se puede hacer consultas de dos tipos, la primera es la básica donde se muestra todo sin importar el tipo de anexos que estén amparados en las concesiones. Por otro lado, la avanzada permite hacer un filtro que solo muestre anexos de cierto tipo.
+		+ Resultados: En este apartado se encuentran los resultados de la búsqueda, tanto de las concesiones como los anexos relacionados. Es posible descargar los resultados de búsqueda en un archivo CSV, para ello solo basta con hacer clic al botón dedescarga.
+
+	* Página de acceso: En esta página es posible inicar sesión para hacer más operaciones además de consultas. Sólo es posible acceder si se está registrado, los usuarios registrados para esta versión del proyecto son los presentes en la siguiente tabla:
+	+--------------+------------+
+	|    Usuario   | Contraseña |
+	+--------------+------------+
+	|    dirMCH    |  m1cH0aCan |
+	+--------------+------------+
+	| subGralAdmon |  4dm0nAgu4 |
+	+--------------+------------+
+	|  orgCuencaNO | 0rg4an1sm0 |
+	+--------------+------------+
+	|    gerMRL    |   m0R3L0$   |
+	+--------------+------------+
+	|    dirBCS    | b4j4C4L$uR |
+	+--------------+------------+
+	Una vez logueado, sepresenta una breve pantalla de bienvenida donde se indican las funciones que se pueden hacer.
+
+	* Página para insertar: En esta paǵina es posible insertar registros de 5 tipos: Concesiones, Descargas, Anexos Subterráneos, Anexos Superficiales y Zonas Federales. Para cada uno de ellos es necesario llenar completamente un formulario, al terminar, se envía a una página de confirmación con el ID correspondiente de los anexos insertados.
+
+	* Página para agregar información de extracción y descarga: En esta página simplemente se añade información sobre la descargay extracción que tienen los anexos de tipo descarga, subterráneo y superficial.
+
+	* Página para actualizar: En esta página se pueden hacer cambios a los registros insertados, lo único necesario es conocer el identificador del registro.
+
+	* Página para eliminar: En esta página se hace un borrado lógico de los registros.
+
+	* Cierre de sesión: Simplemente redirige a la página de Inicio, donde desaparecen las opciones de Insertar, Agregar, Actualizar y Eliminar.
+
+
+# Cambias y mejoras a futuro
+	* Página de consultas.
+			+ Añadir más filtros dependiendo de otros. Por ejemplo, añadir el filtro de municipio una vez seleccionado el estado.
+			+ Mostrar el resultado en la misma página sin necesidad de recargarla.
+	
+	* Página de acceso:
+			+ Crear una sesión de verdad que setermine después de cierto tiempo.
+			+ Personalizar el inicio y la página de consultas para que muestren las demás opciones.
+	
+	* Página para insertar:
+			+ Verificar que la cuenca, municipio, estado, acuífero, fuente, afluente y corriente tengan coherencia por la ubicación, para ello lo ideal sería resucir las opciones conforme se van agregando datos.
+			+ Insertar automáticamente la autoridad que emite el registro con información de inicio de sesión.
+
+
+© 2022 Jazmín López Chacón. Hecho con amor 🖤
